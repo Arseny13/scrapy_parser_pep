@@ -14,9 +14,13 @@ https://github.com/Arseny13
 
 
 <h2>Как использовать</h2>
+
 Активировать виртуальное окружение: `python -m venv venv`
+
 Установить зависимости из requirements.txt : `pip install - r requirements.txt`
+
 Запустить паука: `scrapy crawl pep`
+
 Результат работы появится в папке `results` в формате 2х csv файлов.
 
 <h2>Используемые технологии</h2>
