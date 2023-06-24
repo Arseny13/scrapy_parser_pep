@@ -6,6 +6,7 @@ BASE_DIR = Path(__file__).parent
 
 
 class PepParsePipeline:
+    """Класс pipeline для pep."""
     results = {}
 
     def open_spider(self, spider):
