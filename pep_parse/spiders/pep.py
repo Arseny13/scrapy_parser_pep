@@ -10,7 +10,8 @@ class PepSpider(scrapy.Spider):
 
     def parse(self, response):
         """Функция парса pep."""
-        all_peps = response.css('a[href^="pep-"]')
+        index_by_category = response.xpath('//*[@id="index-by-category"]')
+        all_peps = index_by_category.css('a[href^="pep-"]')
         for pep_link in all_peps:
             yield response.follow(pep_link, callback=self.parse_pep)
 
